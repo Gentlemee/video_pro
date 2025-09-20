@@ -47,6 +47,20 @@
       100% { transform: translateY(-120vh) scale(1.5); opacity: 0; }
     }
 
+    /* Watermark text */
+    .watermark {
+      position: absolute;
+      font-size: 60px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.07);
+      text-transform: uppercase;
+      white-space: nowrap;
+      transform: rotate(-20deg);
+      z-index: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+
     /* Video player card */
     .video-player {
       background: #000;
@@ -114,6 +128,9 @@
   <div class="bubble" style="width:60px; height:60px; left:50%; animation-duration:26s;"></div>
   <div class="bubble" style="width:35px; height:35px; left:70%; animation-duration:20s;"></div>
   <div class="bubble" style="width:20px; height:20px; left:85%; animation-duration:24s;"></div>
+
+  <!-- Watermark -->
+  <div class="watermark">Developed by GentleMe</div>
 
   <!-- Video Player -->
   <div class="video-player" onclick="window.open('https://youtu.be/JEDvUCxqH0A', '_blank')">
